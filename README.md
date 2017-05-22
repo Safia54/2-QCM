@@ -1,2 +1,2 @@
-# test
-# je n'arrive pas à envoyer de mail, je me suis arrêtée à l'étape 5
+#Je n'arrive pas à envoyer de mail, je me suis arrêtée à l'étape 5.
+Je suis en retard car j'étais malade pendant 2 jours...

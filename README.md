@@ -1,3 +1,2 @@
-# Je n'arrive pas à envoyer de mail, je me suis arrêtée à l'étape 5.
-Je suis en retard car j'étais malade pendant 2 jours...
+Questionnaire qcm qui envoie des mail opérationnels via ce site : https://qcmsafia.000webhostapp.com
 voici les consignes de l'exercice https://github.com/becodeorg/BXLCentral/tree/master/Projects/2-QCM

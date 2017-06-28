@@ -1,7 +1,78 @@
-li :before {
-    content: "-";
+body {
+	/*image used*/
+	background-image: url("img/backgroundQCM.jpeg");
+	/* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,h2,p {
+	color:white;
+}
+
+div.titre_intro{
+	
+
+  	width: 400px;
+  	height: 150px;
+  	margin: auto;
+  	text-align: center;
+
+}
+
+div.coordonnées{
+
+	
+  	width: 400px;
+  	height: 150px;
+  	margin-left : 80px;
+  	margin-top: 80px;
+  	position: center;
+
+}
+
+li{
+	background-color: white;
+	display: inline-block;
+	width: 500px;
+  	height: 180px;
+  	margin: 30px;
+
 }
 
 div.php {
-  color: red;
+  color: white;
+  font-family: cursive;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+div.php1 {
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  margin: 30px;
+}
+
+
+.bouton_retour button {
+	width: 100px;
+	margin-left: 300px;
+}
+
+.btn {
+	margin: auto;
+	width: 300px;
+	display: block;
+}
+
+
+img {
+ 	margin-left: 40px;
+	width: 30px;
 }

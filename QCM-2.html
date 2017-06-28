@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> QCM </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+	<form action="resultat.php" method="post">
+		<h1> Take the Quizz </h1>
+		<hr/>
+		<h2> Quel éco-citoyen es-tu ? </h2>
+		<p> Cultivons les plantes </p>
+		<hr/>
+
+		<label> Votre NOM : </label> <input type="text" name="Nom" placeholder="votre nom" required> <br/>
+		<label> Votre Prénom : </label> <input type="text" name="Prénom" placeholder="votre prénom" required> <br/>
+		<label> Votre email : </label> <input type="email" name="email" placeholder="exemple@email.com" required>
+		<ol>
+			<li>
+				<fieldset>
+
+					<legend> La bonne réponse est A ? </legend>
+
+
+					<label for="Re1A"> <input type="radio"  name="question1" value="Re1A"/> Réponse A </label> <br/>
+					<label for="Re1B"> <input type="radio"  name="question1" value="Re1B"/> Réponse B </label> <br/>
+					<label for="Re1C"> <input type="radio"  name="question1" value="Re1C"/> Réponse C </label> <br/>
+
+
+				</fieldset>
+			</li>
+
+			<li>
+				<fieldset>
+
+
+					<legend> La bonne réponse est B ? </legend>
+
+
+					<label for="Re2A"> <input type="radio"  name="question2" value="Re2A"/> Réponse A </label> <br/>
+					<label for="Re2B"> <input type="radio"  name="question2" value="Re2B"/> Réponse B </label> <br/>
+					<label for="Re2C"> <input type="radio"  name="question2" value="Re2C"/> Réponse C </label> <br/>
+
+
+				</fieldset>
+			</li>
+
+			<li>
+				<fieldset>
+					<legend> La bonne réponse est C ? </legend>
+
+					<label for="Re3A"> <input type="radio"  name="question3" value="Re3A"/> Réponse A </label> <br/>
+					<label for="Re3B"> <input type="radio"  name="question3" value="Re3B"/> Réponse B </label> <br/>
+					<label for="Re3C"> <input type="radio"  name="question3" value="Re3C"/> Réponse C </label> <br/>
+
+
+				</fieldset>
+			</li>
+
+
+			<li>
+				<fieldset>
+					<legend> Qui est Dirk Frimout ? </legend>
+
+					<label for="Re4A"> <input type="radio" name="question4" value="Re4A"/> Réponse A : Un astronaute </label> <br/>
+					<label for="Re4B"> <input type="radio" name="question4" value="Re4B"/> Réponse B : Un homme qui vend des moumouttes </label> <br/>
+					<label for="Re4C"> <input type="radio" name="question4" value="Re4C"/> Réponse C : Un prisonnier de Guantanamo, c'est pour ça qu'il est en orange </label> <br/>
+				</fieldset>
+			</li>
+
+
+			<li>
+				<fieldset>
+					<legend> Qui t'aime ? </legend>
+
+					<label for="Re5A"> <input type="radio" name="question5" value="Re5A"/> Réponse A : Ta femme </label> <br/>
+					<label for="Re5B"> <input type="radio" name="question5" value="Re5B"/> Réponse B : Ta mère </label> <br/>
+					<label for="Re5C"> <input type="radio" name="question5" value="Re5C"/> Réponse C : Personne ne t'aime</label> <br/>
+				</fieldset>
+			</li>
+
+
+			<li>
+				<fieldset>
+					<legend> De quelle couleur est le cheval blanc de Napoléon en 1808 ? </legend>
+
+					<label for="Re6A"> <input type="radio" id="Re6A" name="question6" value="Re6A"/> Réponse A : Je ne sais pas, trop compliqué comme question </label> <br/>
+					<label for="Re6B"> <input type="radio" id="Re6B" name="question6" value="Re6B"/> Réponse B : Blanc cassé </label> <br/>
+					<label for="Re6C"> <input type="radio" id="Re6C" name="question6" value="Re6C"/> Réponse C : Il n'avait pas de cheval </label> <br/>
+				</fieldset>
+			</li>
+
+
+		</ol>
+
+		<div class="button">
+			<button type="submit" name="submit" value="submit">Envoyer votre message</button>
+		</div>
+
+
+	</form>
+</body>
+
+</html>

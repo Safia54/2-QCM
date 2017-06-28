@@ -61,16 +61,17 @@
     //     echo "Ta note est de 6/6";
     // } YA MOYEN PLUS COURT :
 
-     echo '<div class="php"> Ta note est de '. $note . '/6 </div>' ;
+     $message='<div class="php"> Ta note est de '. $note . '/6 </div>';
 
-     if(filter_var($_GET['email'], FILTER_VALIDATE_EMAIL) !== false) {
-       echo 'adresse mail valide !';
+     echo $message ;
+
+     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) !== false) {
+       echo "L'adresse mail est valide et le résultat est envoyé à l'adresse !";
      }
 
-     if ($_GET['email']== true) {
-      mail($_GET['email']) AND mail('bihmedn@hotmail.com') ;
+     if ($_POST['email']== true) {
+      mail($_POST['email'], 'bihmedn@hotmail.com', $message) ;
     }
-    ?>
 
 
   </body>

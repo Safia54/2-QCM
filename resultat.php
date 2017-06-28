@@ -16,14 +16,7 @@
     error_reporting(E_ALL);
 
 
-//sanitiser email
-     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) !== false) {
-       echo 'adresse mail valide !';
-     }
 
-     if ($_POST['email']== true) {
-      mail($_POST['email']) AND mail('bihmedn@hotmail.com') ;
-    }
 
 
 
@@ -87,23 +80,20 @@ if (ISSET $_POST['submit']) {
         }
     }
 
-    // if ($note==0) {
-    //     echo "Ta note est de 0/6";
-    // }elseif ($note==1) {
-    //     echo "Ta note est de 1/6";
-    // }elseif ($note==2) {
-    //     echo "Ta note est de 2/6";
-    // }elseif ($note==3) {
-    //     echo "Ta note est de 3/6";
-    // }elseif ($note==4) {
-    //     echo "Ta note est de 4/6";
-    // }elseif ($note==5) {
-    //     echo "Ta note est de 5/6";
-    // }elseif ($note==6) {
-    //     echo "Ta note est de 6/6";
-    // } YA MOYEN PLUS COURT :
+//afficher message
+   $message='<div class="php"> Ta note est de '. $note . '/6 </div>';
 
-     echo '<div class="php"> Ta note est de '. $note . '/6 </div>' ;
+     echo $message ;
+
+//sanitiser email
+     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) !== false) {
+       echo "L'adresse mail est valide et le résultat est envoyé à l'adresse !";
+     }
+
+//envoyer email
+     if ($_POST['email']== true) {
+      mail($_POST['email'], 'bihmedn@hotmail.com', $message) ;
+    }
 
     
     ?>
